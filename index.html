@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">🌤 Weather Forecast App</div>
+    <div class="container">
+        <h2><i class="fas fa-cloud-sun"></i> Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button onclick="getWeather()"><i class="fas fa-search"></i> Get Weather</button>
+        <button onclick="getWeatherByLocation()"><i class="fas fa-map-marker-alt"></i> Use My Location</button>
+        <div class="weather-card" id="weather-card">
+            <div class="weather-detail"><i class="fas fa-thermometer-half"></i><span id="temperature"></span></div>
+            <div class="weather-detail"><i class="fas fa-cloud"></i><span id="description"></span></div>
+            <div class="weather-detail"><i class="fas fa-tint"></i><span id="humidity"></span></div>
+            <div class="weather-detail"><i class="fas fa-wind"></i><span id="wind-speed"></span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
